@@ -1,0 +1,20 @@
+#N canvas 0 22 873 466 12;
+#X obj 213 246 osc~ 440;
+#X obj 213 366 dac~;
+#X obj 371 287 vline~;
+#X obj 213 224 mtof;
+#X obj 210 6 r start;
+#X msg 371 218 0 \, 1 25 \, 0.3 20 20 \, 0 100 400, f 10;
+#X obj 215 43 bng 15 250 50 0 empty bangButton empty 17 7 0 10 -262144
+-1 -1;
+#X obj 213 314 *~;
+#X obj 300 327 del2;
+#X connect 0 0 7 0;
+#X connect 2 0 7 1;
+#X connect 3 0 0 0;
+#X connect 4 0 6 0;
+#X connect 5 0 2 0;
+#X connect 6 0 5 0;
+#X connect 7 0 1 0;
+#X connect 7 0 8 0;
+#X connect 8 0 1 1;
